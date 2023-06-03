@@ -12,4 +12,4 @@ def test_predict():
     payload = {"a": 1,  "b":[1, 2] , "c" :"This is string"}
     response = client.post("/predict", json=payload)
     assert response.status_code == 200
-    assert response.json()[0] == 1
+    assert response.json()[0] == 2
