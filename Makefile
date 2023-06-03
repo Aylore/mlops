@@ -6,4 +6,8 @@ lint:
 	pylint main.py
 
 test:
-	python -m pytest -vv test_main.py
+	python -m pytest -vv tests/
+
+
+run:
+	uvicorn app:app --reload
