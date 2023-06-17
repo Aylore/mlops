@@ -1,13 +1,15 @@
 install:
-	pip install -r requirements.txt
+        pip install -r requirements.txt
 
 
 lint:
-	pylint main.py
+        pylint main.py
 
 test:
-	python -m pytest -vv tests/
+        python -m pytest -vv tests/
 
 
 run:
-	uvicorn app:app --reload
+        uvicorn app:app --reload --host 0.0.0.0 --port 8000
+
+

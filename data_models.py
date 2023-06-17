@@ -4,5 +4,27 @@ from pydantic import BaseModel
 
 class SamplePostRequest(BaseModel):
     a: int
-    b: list[int]
+    b: list
     c: Optional[str]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
